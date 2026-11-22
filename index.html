@@ -1,0 +1,1257 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>泰坦尼克号画画未删减版 - 深度解析,官方正版影像专题 | 幕海影像</title>
+<meta name="description" content="幕海影像官方网站推出泰坦尼克号画画未删减版深度专题，围绕素描场景还原、正版高清影像、创作者访谈与行业观察，打造值得信赖的原创视频内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1b2d'/%3E%3Cpath d='M14 44 L32 16 L50 44 Z' fill='none' stroke='%23c9a45c' stroke-width='3'/%3E%3Cpath d='M22 44 L22 34 L42 34 L42 44' fill='none' stroke='%23e8dcc4' stroke-width='2.4'/%3E%3Ccircle cx='32' cy='25' r='2.6' fill='%23c9a45c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --mh-navy:#0f1b2d;
+  --mh-navy-2:#16263d;
+  --mh-gold:#c9a45c;
+  --mh-gold-soft:#e2c992;
+  --mh-paper:#f6f2ea;
+  --mh-paper-2:#efe8db;
+  --mh-ink:#1d2635;
+  --mh-muted:#5d6a7e;
+  --mh-line:#d9d1c2;
+  --mh-red:#a8433a;
+  --mh-radius:14px;
+  --mh-sticky:110px;
+  --mh-shadow:0 10px 30px rgba(15,27,45,.12);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"Songti SC","Noto Serif SC",Georgia,"Times New Roman",serif;
+  background:var(--mh-paper);
+  color:var(--mh-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3,h4{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;line-height:1.35;color:var(--mh-navy);}
+h1{font-size:clamp(30px,4.4vw,52px);letter-spacing:.02em;margin:0 0 14px;}
+h2{font-size:clamp(22px,2.8vw,32px);margin:0 0 14px;}
+h3{font-size:clamp(17px,2vw,21px);margin:0 0 10px;}
+p{margin:0 0 14px;}
+.mh-shell{width:min(1180px,92vw);margin:0 auto;}
+.mh-sec{padding:64px 0;}
+.mh-sec--tight{padding:44px 0;}
+.mh-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--mh-gold);font-weight:700;
+}
+.mh-eyebrow::before{content:"";width:26px;height:1px;background:var(--mh-gold);display:inline-block;}
+.mh-sec-head{max-width:760px;margin-bottom:30px;}
+.mh-sec-head p{color:var(--mh-muted);font-size:15.5px;}
+.mh-muted{color:var(--mh-muted);}
+.mh-chip{
+  display:inline-block;font-family:"PingFang SC",sans-serif;font-size:12px;
+  padding:3px 10px;border-radius:999px;background:rgba(201,164,92,.16);
+  color:#8a6c2f;border:1px solid rgba(201,164,92,.4);margin:0 6px 6px 0;
+}
+.mh-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-family:"PingFang SC",sans-serif;font-size:14.5px;font-weight:600;
+  padding:11px 22px;border-radius:999px;border:1px solid transparent;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+}
+.mh-btn:hover{transform:translateY(-2px);}
+.mh-btn--primary{background:var(--mh-gold);color:#20180a;box-shadow:0 8px 20px rgba(201,164,92,.34);}
+.mh-btn--ghost{border-color:rgba(232,220,196,.5);color:var(--mh-paper);}
+.mh-btn--ghost:hover{background:rgba(232,220,196,.12);}
+.mh-btn--line{border-color:var(--mh-navy);color:var(--mh-navy);background:transparent;}
+.mh-btn--line:hover{background:var(--mh-navy);color:var(--mh-paper);}
+.mh-btn--sm{padding:7px 14px;font-size:13px;}
+
+/* ---------- sticky announce + header ---------- */
+.mh-announce{
+  background:linear-gradient(90deg,#0f1b2d,#22354f 60%,#0f1b2d);
+  color:#efe6d4;font-family:"PingFang SC",sans-serif;font-size:13.2px;
+}
+.mh-announce__inner{
+  display:flex;align-items:center;gap:14px;padding:9px 0;
+  overflow:hidden;
+}
+.mh-announce__tag{
+  flex:none;font-weight:700;color:#20180a;background:var(--mh-gold);
+  border-radius:4px;padding:1px 8px;font-size:12px;letter-spacing:.06em;
+}
+.mh-announce__track{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#d9ceb8;}
+.mh-announce__track b{color:var(--mh-gold-soft);font-weight:600;}
+.mh-sticky-wrap{
+  position:sticky;top:0;z-index:60;background:rgba(246,242,234,.96);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--mh-line);
+  box-shadow:0 4px 16px rgba(15,27,45,.07);
+}
+.mh-header{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0;}
+.mh-brand{display:flex;align-items:center;gap:11px;min-width:0;}
+.mh-brand__mark{
+  width:42px;height:42px;flex:none;border-radius:11px;background:var(--mh-navy);
+  display:grid;place-items:center;
+}
+.mh-brand__mark svg{width:24px;height:24px;}
+.mh-brand__name{font-family:"PingFang SC",sans-serif;font-weight:800;font-size:18px;letter-spacing:.04em;color:var(--mh-navy);}
+.mh-brand__sub{font-size:11px;color:var(--mh-muted);letter-spacing:.18em;text-transform:uppercase;}
+.mh-nav{display:flex;align-items:center;gap:4px;}
+.mh-nav a{
+  font-family:"PingFang SC",sans-serif;font-size:14px;padding:7px 11px;border-radius:8px;color:#33415c;
+}
+.mh-nav a:hover{background:rgba(201,164,92,.18);color:#7a5d22;}
+.mh-header__tools{display:flex;align-items:center;gap:10px;}
+.mh-search{
+  display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--mh-line);
+  border-radius:999px;padding:5px 6px 5px 14px;
+}
+.mh-search input{
+  border:0;outline:0;background:transparent;width:150px;font-size:13.5px;
+  font-family:"PingFang SC",sans-serif;color:var(--mh-ink);
+}
+.mh-search button{
+  border:0;background:var(--mh-navy);color:#fff;border-radius:999px;
+  width:30px;height:30px;display:grid;place-items:center;font-size:14px;
+}
+.mh-search-result{
+  font-family:"PingFang SC",sans-serif;font-size:12.5px;color:#8a6c2f;
+  margin-top:6px;min-height:18px;
+}
+.mh-burger{
+  display:none;border:1px solid var(--mh-line);background:#fff;border-radius:10px;
+  width:42px;height:40px;place-items:center;
+}
+.mh-burger span{display:block;width:18px;height:2px;background:var(--mh-navy);margin:3px 0;border-radius:2px;}
+
+/* ---------- hero ---------- */
+.mh-hero{
+  background:
+    radial-gradient(1200px 500px at 85% -10%,rgba(201,164,92,.22),transparent 60%),
+    linear-gradient(160deg,#0f1b2d 0%,#152840 55%,#0b1422 100%);
+  color:var(--mh-paper);position:relative;overflow:hidden;
+}
+.mh-hero::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:120px;
+  background:linear-gradient(180deg,transparent,rgba(0,0,0,.35));
+  pointer-events:none;
+}
+.mh-hero__grid{
+  display:grid;grid-template-columns:minmax(0,5fr) minmax(0,5fr);gap:44px;align-items:center;
+  padding:66px 0 72px;position:relative;z-index:1;
+}
+.mh-hero h1{color:#f7f0e1;}
+.mh-hero__lead{font-size:clamp(15px,1.5vw,17.5px);color:#d6cdbc;max-width:52ch;}
+.mh-hero__intro{
+  font-size:14.6px;color:#bfb7a6;border-left:2px solid var(--mh-gold);
+  padding-left:16px;margin:18px 0 22px;max-width:56ch;
+}
+.mh-hero__btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px;}
+.mh-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:520px;}
+.mh-stat{
+  background:rgba(255,255,255,.05);border:1px solid rgba(232,220,196,.18);
+  border-radius:12px;padding:14px 14px 12px;
+}
+.mh-stat__num{font-family:"PingFang SC",sans-serif;font-size:clamp(20px,2.4vw,27px);font-weight:800;color:var(--mh-gold-soft);letter-spacing:.01em;}
+.mh-stat__label{font-size:12.4px;color:#b3ab9b;letter-spacing:.04em;}
+.mh-hero__visual{position:relative;}
+.mh-hero__frame{
+  border-radius:18px;overflow:hidden;border:1px solid rgba(232,220,196,.24);
+  box-shadow:0 30px 70px rgba(0,0,0,.5);
+}
+.mh-hero__frame img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;}
+.mh-hero__caption{
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+  margin-top:12px;font-size:12.4px;color:#b3ab9b;font-family:"PingFang SC",sans-serif;
+}
+.mh-hero__badge{
+  position:absolute;top:16px;left:16px;background:rgba(15,27,45,.82);
+  border:1px solid rgba(201,164,92,.6);color:var(--mh-gold-soft);
+  font-family:"PingFang SC",sans-serif;font-size:12px;font-weight:700;
+  padding:5px 12px;border-radius:999px;letter-spacing:.08em;
+}
+
+/* ---------- generic cards ---------- */
+.mh-card{
+  background:#fff;border:1px solid var(--mh-line);border-radius:var(--mh-radius);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.mh-card:hover{transform:translateY(-4px);box-shadow:var(--mh-shadow);border-color:rgba(201,164,92,.6);}
+
+/* focus */
+.mh-focus{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);gap:30px;align-items:start;}
+.mh-focus__main{overflow:hidden;}
+.mh-focus__main img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.mh-focus__body{padding:22px 24px 24px;}
+.mh-focus__side{display:grid;gap:16px;}
+.mh-side-item{padding:18px 20px;}
+.mh-side-item h3{font-size:17px;margin-bottom:6px;}
+.mh-side-item p{font-size:13.6px;color:var(--mh-muted);margin:0 0 8px;}
+
+/* video list */
+.mh-video-list{display:grid;gap:14px;}
+.mh-video{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;
+  padding:20px 22px;align-items:center;
+}
+.mh-video--withthumb{grid-template-columns:170px minmax(0,1fr) auto;}
+.mh-video__thumb{overflow:hidden;border-radius:10px;}
+.mh-video__thumb img{width:100%;aspect-ratio:16/10;object-fit:cover;}
+.mh-video__head{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;margin-bottom:4px;}
+.mh-video__head h3{margin:0;font-size:17.5px;}
+.mh-video__meta{font-family:"PingFang SC",sans-serif;font-size:12.6px;color:var(--mh-muted);margin-bottom:6px;}
+.mh-video__desc{font-size:14px;color:#455063;margin:0 0 8px;}
+.mh-video__ops{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:flex-end;}
+.mh-op{
+  display:inline-flex;align-items:center;gap:5px;border:1px solid var(--mh-line);
+  background:#fdfbf7;border-radius:999px;padding:5px 12px;font-size:12.6px;
+  font-family:"PingFang SC",sans-serif;color:#4a566b;transition:.16s;
+}
+.mh-op:hover{border-color:var(--mh-gold);color:#8a6c2f;}
+.mh-op.is-liked{background:#a8433a;border-color:#a8433a;color:#fff;}
+.mh-op.is-saved{background:var(--mh-navy);border-color:var(--mh-navy);color:#fff;}
+
+/* topics */
+.mh-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.mh-topic{padding:22px 22px 20px;display:flex;flex-direction:column;}
+.mh-topic__status{
+  font-family:"PingFang SC",sans-serif;font-size:11.6px;font-weight:700;letter-spacing:.06em;
+  color:#8a6c2f;background:rgba(201,164,92,.16);border:1px solid rgba(201,164,92,.42);
+  border-radius:999px;padding:2px 10px;align-self:flex-start;margin-bottom:10px;
+}
+.mh-topic ul{margin:10px 0 0;padding-left:18px;font-size:13.8px;color:#46536a;}
+.mh-topic ul li{margin-bottom:6px;}
+
+/* authors */
+.mh-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.mh-author{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:20px;}
+.mh-avatar{
+  width:64px;height:64px;border-radius:50%;display:grid;place-items:center;
+  font-family:"PingFang SC",sans-serif;font-weight:800;font-size:22px;color:#fff;
+}
+.mh-author__name{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;}
+.mh-author__name h3{margin:0;font-size:17px;}
+.mh-author__tags{font-size:12.4px;color:#8a6c2f;font-family:"PingFang SC",sans-serif;}
+.mh-author__nums{font-family:"PingFang SC",sans-serif;font-size:12.6px;color:var(--mh-muted);margin:2px 0 6px;}
+.mh-author p{font-size:13.6px;color:#4a566b;margin:0 0 8px;}
+
+/* feature long text */
+.mh-prose{
+  background:#fff;border:1px solid var(--mh-line);border-radius:var(--mh-radius);
+  padding:34px clamp(20px,4vw,48px);
+}
+.mh-prose h3{margin-top:26px;}
+.mh-prose h3:first-of-type{margin-top:8px;}
+.mh-prose p{font-size:15.4px;color:#37425a;}
+.mh-prose .mh-quote{
+  border-left:3px solid var(--mh-gold);background:var(--mh-paper-2);
+  padding:14px 18px;border-radius:0 10px 10px 0;font-size:14.6px;color:#4a566b;margin:18px 0;
+}
+.mh-inline-figure{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0;}
+.mh-inline-figure figure{margin:0;}
+.mh-inline-figure img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;border:1px solid var(--mh-line);}
+.mh-inline-figure figcaption{font-size:12.6px;color:var(--mh-muted);margin-top:6px;font-family:"PingFang SC",sans-serif;}
+
+/* reviews */
+.mh-reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.mh-review{padding:18px 20px;}
+.mh-review__top{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-bottom:6px;}
+.mh-review__who{font-family:"PingFang SC",sans-serif;font-weight:700;font-size:14px;color:var(--mh-navy);}
+.mh-review__score{color:var(--mh-gold);font-size:13px;letter-spacing:.1em;}
+.mh-review p{font-size:13.9px;color:#46536a;margin:0;}
+
+/* data table-ish */
+.mh-rank{display:grid;gap:10px;}
+.mh-rank__row{
+  display:grid;grid-template-columns:52px minmax(0,1fr) 88px 74px;gap:14px;align-items:center;
+  padding:14px 18px;background:#fff;border:1px solid var(--mh-line);border-radius:12px;
+}
+.mh-rank__no{font-family:"PingFang SC",sans-serif;font-weight:800;font-size:19px;color:var(--mh-gold);}
+.mh-rank__title{font-family:"PingFang SC",sans-serif;font-weight:600;font-size:14.6px;color:var(--mh-navy);}
+.mh-rank__title small{display:block;font-weight:400;color:var(--mh-muted);font-size:12.4px;}
+.mh-rank__val{font-family:"PingFang SC",sans-serif;font-size:13px;color:#4a566b;text-align:right;}
+.mh-rank__bar{height:6px;border-radius:999px;background:var(--mh-paper-2);overflow:hidden;}
+.mh-rank__bar i{display:block;height:100%;background:linear-gradient(90deg,var(--mh-gold),#e0c184);border-radius:999px;}
+
+/* partners & news */
+.mh-two-col{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;align-items:start;}
+.mh-news{display:grid;gap:12px;}
+.mh-news__item{border-left:2px solid var(--mh-gold);padding:2px 0 2px 16px;}
+.mh-news__date{font-family:"PingFang SC",sans-serif;font-size:12.4px;color:var(--mh-muted);}
+.mh-news__item h3{font-size:15.6px;margin:2px 0 4px;}
+.mh-news__item p{font-size:13.6px;color:#4a566b;margin:0;}
+.mh-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.mh-partner{
+  display:flex;align-items:center;gap:10px;padding:14px 16px;background:#fff;
+  border:1px solid var(--mh-line);border-radius:12px;
+  font-family:"PingFang SC",sans-serif;font-size:13.6px;font-weight:600;color:#37425a;
+}
+.mh-partner span.dot{width:10px;height:10px;border-radius:3px;background:var(--mh-gold);flex:none;}
+
+/* faq */
+.mh-faq{display:grid;gap:10px;}
+.mh-faq details{
+  background:#fff;border:1px solid var(--mh-line);border-radius:12px;padding:14px 18px;
+}
+.mh-faq summary{
+  font-family:"PingFang SC",sans-serif;font-weight:700;font-size:15px;color:var(--mh-navy);
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.mh-faq summary::-webkit-details-marker{display:none;}
+.mh-faq summary::after{content:"+";font-size:20px;color:var(--mh-gold);line-height:1;}
+.mh-faq details[open] summary::after{content:"–";}
+.mh-faq p{font-size:14px;color:#46536a;margin:10px 0 0;}
+
+/* cta strip */
+.mh-cta{
+  background:linear-gradient(120deg,#0f1b2d,#1c3049 70%,#0d1726);
+  color:var(--mh-paper);border-radius:18px;padding:36px clamp(22px,4vw,48px);
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;
+}
+.mh-cta h2{color:#f7f0e1;margin-bottom:6px;}
+.mh-cta p{color:#bfb7a6;font-size:14.4px;margin:0;}
+
+/* footer */
+.mh-footer{background:#0b1420;color:#a9b2c0;padding:52px 0 28px;font-family:"PingFang SC",sans-serif;}
+.mh-footer__grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:28px;}
+.mh-footer h4{color:#e8dcc4;font-size:14px;letter-spacing:.08em;margin:0 0 12px;font-family:inherit;}
+.mh-footer a{display:block;font-size:13.2px;color:#a9b2c0;padding:3px 0;}
+.mh-footer a:hover{color:var(--mh-gold-soft);}
+.mh-footer__brand{display:flex;align-items:center;gap:11px;margin-bottom:12px;}
+.mh-footer__brand .mh-brand__name{color:#e8dcc4;}
+.mh-footer p{font-size:13px;color:#8892a2;margin:0 0 8px;line-height:1.7;}
+.mh-footer__bottom{
+  border-top:1px solid rgba(232,220,196,.14);margin-top:30px;padding-top:18px;
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:12.6px;color:#7d8798;
+}
+
+/* toast & modal & toTop */
+.mh-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:200;
+  background:#0f1b2d;color:#f0e8d8;font-family:"PingFang SC",sans-serif;font-size:13.4px;
+  padding:10px 20px;border-radius:999px;border:1px solid rgba(201,164,92,.5);
+  opacity:0;pointer-events:none;transition:.24s;
+}
+.mh-toast.is-show{opacity:1;transform:translate(-50%,0);}
+.mh-modal{
+  position:fixed;inset:0;z-index:180;display:none;place-items:center;padding:20px;
+  background:rgba(8,14,24,.6);backdrop-filter:blur(3px);
+}
+.mh-modal.is-open{display:grid;}
+.mh-modal__box{
+  width:min(560px,100%);background:var(--mh-paper);border-radius:16px;padding:26px 26px 22px;
+  border:1px solid var(--mh-line);box-shadow:0 30px 80px rgba(0,0,0,.4);
+  max-height:86vh;overflow:auto;
+}
+.mh-modal__head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:8px;}
+.mh-modal__head h3{margin:0;}
+.mh-modal__close{border:0;background:transparent;font-size:22px;line-height:1;color:var(--mh-muted);}
+.mh-modal label{display:block;font-family:"PingFang SC",sans-serif;font-size:13px;font-weight:600;margin:12px 0 5px;color:#37425a;}
+.mh-modal input,.mh-modal textarea,.mh-modal select{
+  width:100%;border:1px solid var(--mh-line);border-radius:9px;padding:9px 12px;
+  font-family:"PingFang SC",sans-serif;font-size:13.6px;background:#fff;color:var(--mh-ink);outline:0;
+}
+.mh-modal textarea{resize:vertical;min-height:88px;}
+.mh-modal input:focus,.mh-modal textarea:focus,.mh-modal select:focus{border-color:var(--mh-gold);}
+.mh-modal__foot{display:flex;justify-content:flex-end;gap:10px;margin-top:18px;}
+.mh-totop{
+  position:fixed;right:22px;bottom:24px;z-index:120;width:46px;height:46px;border-radius:50%;
+  border:1px solid var(--mh-line);background:#fff;color:var(--mh-navy);font-size:17px;
+  box-shadow:var(--mh-shadow);display:none;place-items:center;
+}
+.mh-totop.is-show{display:grid;}
+
+/* anchors offset */
+#mh-main-start,#mh-focus,#mh-parse,#mh-topics,#mh-authors,#mh-reviews,#mh-rank,#mh-updates,#mh-faq,#mh-submit{
+  scroll-margin-top:var(--mh-sticky);
+}
+
+/* responsive */
+@media (max-width:1024px){
+  .mh-hero__grid{grid-template-columns:1fr;gap:32px;padding:48px 0 56px;}
+  .mh-focus{grid-template-columns:1fr;}
+  .mh-topics{grid-template-columns:1fr 1fr;}
+  .mh-footer__grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:860px){
+  .mh-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:#fbf8f2;
+    border-bottom:1px solid var(--mh-line);padding:10px 4vw 16px;flex-direction:column;
+    align-items:stretch;gap:2px;box-shadow:0 18px 30px rgba(15,27,45,.14);
+  }
+  .mh-nav.is-open{display:flex;}
+  .mh-nav a{padding:10px 12px;}
+  .mh-burger{display:grid;}
+  .mh-header{position:relative;}
+  .mh-search input{width:104px;}
+  .mh-two-col{grid-template-columns:1fr;}
+  .mh-video,.mh-video--withthumb{grid-template-columns:1fr;}
+  .mh-video__ops{justify-content:flex-start;}
+  .mh-cta{grid-template-columns:1fr;}
+}
+@media (max-width:680px){
+  .mh-sec{padding:46px 0;}
+  .mh-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
+  .mh-stat{padding:10px 9px;}
+  .mh-stat__label{font-size:11px;}
+  .mh-topics,.mh-authors,.mh-reviews,.mh-partners{grid-template-columns:1fr;}
+  .mh-rank__row{grid-template-columns:38px minmax(0,1fr) 62px;gap:10px;}
+  .mh-rank__bar{display:none;}
+  .mh-inline-figure{grid-template-columns:1fr;}
+  .mh-announce__inner{padding:7px 0;font-size:12px;}
+  .mh-announce__track{font-size:12px;}
+  .mh-search{display:none;}
+  .mh-footer__grid{grid-template-columns:1fr;}
+  .mh-author{grid-template-columns:52px minmax(0,1fr);}
+  .mh-avatar{width:52px;height:52px;font-size:18px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头（吸顶） -->
+<div class="mh-sticky-wrap">
+  <div class="mh-announce">
+    <div class="mh-shell mh-announce__inner">
+      <span class="mh-announce__tag">官方发布</span>
+      <div class="mh-announce__track">
+        「泰坦尼克号画画未删减版」影像考据专题上线：新增 <b>素描场景逐帧拆解</b>、<b>正版高清修复片段</b>、<b>画师访谈实录</b> 三组内容，报名通道与投稿入口同步开启。
+      </div>
+    </div>
+  </div>
+  <header class="mh-header mh-shell" id="mh-top">
+    <a class="mh-brand" href="#mh-top" aria-label="幕海影像官方网站首页">
+      <span class="mh-brand__mark">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M12 46 L32 14 L52 46 Z" fill="none" stroke="#c9a45c" stroke-width="3"></path>
+          <path d="M20 46 L20 35 L44 35 L44 46" fill="none" stroke="#e8dcc4" stroke-width="2.4"></path>
+          <circle cx="32" cy="24" r="2.8" fill="#c9a45c"></circle>
+        </svg>
+      </span>
+      <span>
+        <span class="mh-brand__name">幕海影像</span>
+        <span class="mh-brand__sub">MUHAI FILM · 官网</span>
+      </span>
+    </a>
+
+    <nav class="mh-nav" id="mh-nav" aria-label="主导航">
+      <a href="#mh-focus">焦点内容</a>
+      <a href="#mh-parse">专题解析</a>
+      <a href="#mh-topics">企划专题</a>
+      <a href="#mh-authors">创作者</a>
+      <a href="#mh-rank">口碑榜</a>
+      <a href="#mh-updates">官方动态</a>
+      <a href="#mh-faq">帮助</a>
+    </nav>
+
+    <div class="mh-header__tools">
+      <form class="mh-search" id="mh-search-form" role="search" onsubmit="return false;">
+        <input id="mh-search-input" type="search" placeholder="搜索影像、创作者…" aria-label="站内搜索">
+        <button type="submit" id="mh-search-btn" aria-label="提交搜索">⌕</button>
+      </form>
+      <button class="mh-burger" id="mh-burger" aria-label="展开导航" aria-expanded="false" aria-controls="mh-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="mh-shell"><div class="mh-search-result" id="mh-search-result" aria-live="polite"></div></div>
+</div>
+
+<main id="mh-main-start">
+
+  <!-- S2 品牌首屏 -->
+  <section class="mh-hero" aria-labelledby="mh-hero-title">
+    <div class="mh-shell mh-hero__grid">
+      <div>
+        <span class="mh-eyebrow">Official Brand Portal</span>
+        <h1 id="mh-hero-title">泰坦尼克号画画未删减版</h1>
+        <p class="mh-hero__lead">幕海影像官方网站深耕影视影像考据与创作者内容生态，以原创、正版、高清为底线，把「泰坦尼克号画画未删减版」这一经典影像片段拆解为可学习、可讨论、可收藏的完整内容体系。</p>
+        <p class="mh-hero__intro">作为一家持续运营的影像内容企业，我们与画师、剪辑师、影视研究者共同搭建品质社区：从素描笔触到镜头调度，从修复素材到观众口碑，让每一次观看都能沉淀为真实的知识与陪伴。</p>
+        <div class="mh-hero__btns">
+          <a class="mh-btn mh-btn--primary" href="#mh-focus">观看精品内容</a>
+          <a class="mh-btn mh-btn--ghost" href="#mh-authors">认识创作者</a>
+          <a class="mh-btn mh-btn--ghost" href="#mh-submit">投稿与报名</a>
+        </div>
+        <div class="mh-stats">
+          <div class="mh-stat">
+            <div class="mh-stat__num" data-count="1286">0</div>
+            <div class="mh-stat__label">原创影像条目</div>
+          </div>
+          <div class="mh-stat">
+            <div class="mh-stat__num" data-count="47">0</div>
+            <div class="mh-stat__label">签约创作者</div>
+          </div>
+          <div class="mh-stat">
+            <div class="mh-stat__num" data-count="96">0</div>
+            <div class="mh-stat__label">口碑好评率 %</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mh-hero__visual">
+        <div class="mh-hero__frame">
+          <img
+            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='sea' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23182b45'/%3E%3Cstop offset='1' stop-color='%230a1422'/%3E%3C/linearGradient%3E%3ClinearGradient id='paperG' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f4ecdb'/%3E%3Cstop offset='1' stop-color='%23e2d4b8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23sea)'/%3E%3Cg opacity='.5'%3E%3Ccircle cx='640' cy='110' r='54' fill='%23e2c992' opacity='.55'/%3E%3C/g%3E%3Cpath d='M0 470 Q200 440 400 468 T800 452 L800 600 L0 600 Z' fill='%230d1a2b'/%3E%3Cpath d='M0 500 Q220 474 430 500 T800 492 L800 600 L0 600 Z' fill='%230a1421' opacity='.85'/%3E%3Cg transform='rotate(-6 400 320)'%3E%3Crect x='196' y='176' width='408' height='300' rx='8' fill='url(%23paperG)'/%3E%3Crect x='212' y='196' width='376' height='262' rx='4' fill='none' stroke='%23c2b191' stroke-width='2'/%3E%3Cg stroke='%235a4a34' stroke-width='2.6' fill='none' opacity='.9'%3E%3Cpath d='M300 420 C330 360 356 330 392 300'/%3E%3Cpath d='M392 300 C404 288 420 282 440 286'/%3E%3Cpath d='M344 372 C338 350 342 330 358 312'/%3E%3Cpath d='M380 330 C374 312 380 296 396 284'/%3E%3Cpath d='M412 306 C424 300 440 302 450 312'/%3E%3C/g%3E%3Ccircle cx='452' cy='288' r='15' fill='none' stroke='%235a4a34' stroke-width='2.4'/%3E%3Cpath d='M446 296 q7 -14 16 -3' stroke='%235a4a34' stroke-width='2' fill='none'/%3E%3Cg stroke='%23988a6f' stroke-width='1.6' opacity='.8'%3E%3Cpath d='M250 440 h120'/%3E%3Cpath d='M250 452 h86'/%3E%3C/g%3E%3C/g%3E%3Cg fill='%23e2c992' opacity='.85'%3E%3Crect x='116' y='120' width='3' height='26'/%3E%3Crect x='124' y='112' width='3' height='34'/%3E%3Crect x='132' y='122' width='3' height='24'/%3E%3C/g%3E%3C/svg%3E"
+            alt="泰坦尼克号画画未删减版主题主视觉：素描稿本上的速写线条与深色远洋氛围交叠">
+        </div>
+        <div class="mh-hero__caption">
+          <span>主视觉 · 素描场景概念复原</span>
+          <span>原创视觉 / 官方正版</span>
+        </div>
+        <span class="mh-hero__badge">官方专题</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 -->
+  <section class="mh-sec" id="mh-focus" aria-labelledby="mh-focus-title">
+    <div class="mh-shell">
+      <div class="mh-sec-head">
+        <span class="mh-eyebrow">Focus Selection</span>
+        <h2 id="mh-focus-title">焦点内容：泰坦尼克号画画未删减版的三种打开方式</h2>
+        <p>我们不做单一视频的搬运，而是把「泰坦尼克号画画未删减版」还原为一条可以逐层深入的内容链：先看整体氛围，再看笔触细节，最后回到创作者的方法论。</p>
+      </div>
+
+      <div class="mh-focus">
+        <article class="mh-card mh-focus__main">
+          <img
+            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 540'%3E%3Cdefs%3E%3ClinearGradient id='night' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2314263c'/%3E%3Cstop offset='1' stop-color='%23334a63'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='960' height='540' fill='url(%23night)'/%3E%3Ccircle cx='790' cy='96' r='46' fill='%23f0e0bb' opacity='.75'/%3E%3Cg opacity='.9'%3E%3Crect x='118' y='150' width='520' height='300' rx='8' fill='%23f3ecdc' transform='rotate(-3 380 300)'/%3E%3Crect x='140' y='176' width='470' height='248' fill='none' stroke='%23c9b48d' stroke-width='2' transform='rotate(-3 380 300)'/%3E%3Cg stroke='%234b3d2b' stroke-width='3' fill='none' transform='rotate(-3 380 300)'%3E%3Cpath d='M250 370 C300 300 340 270 400 240'/%3E%3Cpath d='M400 240 C420 226 448 224 466 234'/%3E%3Cpath d='M320 330 C312 300 320 276 344 254'/%3E%3Cpath d='M368 292 C356 266 366 244 392 232'/%3E%3Cpath d='M430 246 C452 238 476 244 488 258'/%3E%3C/g%3E%3Ccircle cx='480' cy='232' r='19' fill='none' stroke='%234b3d2b' stroke-width='2.6' transform='rotate(-3 380 300)'/%3E%3C/g%3E%3Cg stroke='%23e2c992' stroke-width='2' opacity='.8'%3E%3Cpath d='M700 380 h130'/%3E%3Cpath d='M700 400 h96'/%3E%3Cpath d='M700 420 h118'/%3E%3C/g%3E%3Cg fill='%23e2c992' opacity='.55'%3E%3Crect x='700' y='180' width='4' height='48'/%3E%3Crect x='712' y='168' width='4' height='60'/%3E%3Crect x='724' y='184' width='4' height='44'/%3E%3C/g%3E%3C/svg%3E"
+            alt="重点推荐封面：夜色中的素描本与泰坦尼克号画画未删减版场景线条">
+          <div class="mh-focus__body">
+            <div>
+              <span class="mh-chip">重点推荐</span>
+              <span class="mh-chip">深度考据</span>
+              <span class="mh-chip">正版高清</span>
+            </div>
+            <h3>一帧一帧看：泰坦尼克号画画未删减版的笔触与呼吸</h3>
+            <p class="mh-video__meta">作者：沈昼白 · 42 分钟 · 播放 128.7 万 · 点赞 5.4 万 · 收藏 2.1 万</p>
+            <p>我们把「泰坦尼克号画画未删减版」中出现的手部动作、铅笔角度与呼吸节奏逐段拆开，还原一位画师在面对陌生人时的犹豫与笃定。视频里没有炫技，只有真实的手感与时间。</p>
+            <div class="mh-video__ops" style="justify-content:flex-start">
+              <button class="mh-op" data-like aria-pressed="false">♥ 点赞 <b>54207</b></button>
+              <button class="mh-op" data-save aria-pressed="false">☆ 收藏</button>
+              <button class="mh-op" data-copy>复制链接</button>
+              <button class="mh-op" data-comment>查看评论</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="mh-focus__side">
+          <article class="mh-card mh-side-item">
+            <span class="mh-chip">创作者访谈</span>
+            <h3>画到第 17 遍才敢停笔</h3>
+            <p>画师沈昼白谈起「泰坦尼克号画画未删减版」中那段看似简单的素描：最难的不是像，而是让对方在纸上重新被看见。</p>
+            <a class="mh-btn mh-btn--line mh-btn--sm" href="#mh-authors">阅读访谈</a>
+          </article>
+          <article class="mh-card mh-side-item">
+            <span class="mh-chip">行业观察</span>
+            <h3>为什么这个片段值得被反复研究</h3>
+            <p>从镜头语言到光影层次，「泰坦尼克号画画未删减版」为影视美术教学提供了一个高密度的观察样本。</p>
+            <a class="mh-btn mh-btn--line mh-btn--sm" href="#mh-parse">进入解析</a>
+          </article>
+          <article class="mh-card mh-side-item">
+            <span class="mh-chip">社区热榜</span>
+            <h3>本周口碑榜已有 6 条新内容</h3>
+            <p>来自画室、剪辑房与大学课堂的观看笔记持续汇入，官方精选口碑内容每日更新。</p>
+            <a class="mh-btn mh-btn--line mh-btn--sm" href="#mh-rank">查看榜单</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- M3 视频文字列表 -->
+      <div class="mh-video-list" style="margin-top:26px">
+        <article class="mh-card mh-video mh-video--withthumb">
+          <div class="mh-video__thumb">
+            <img
+              src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23e9e0cb'/%3E%3Cg stroke='%234f4433' stroke-width='2.4' fill='none'%3E%3Cpath d='M70 240 C120 190 150 170 210 150'/%3E%3Cpath d='M210 150 C232 140 258 142 272 154'/%3E%3Cpath d='M150 210 C142 182 152 158 176 144'/%3E%3Cpath d='M240 156 C262 148 286 154 298 168'/%3E%3C/g%3E%3Ccircle cx='282' cy='150' r='16' fill='none' stroke='%234f4433' stroke-width='2.2'/%3E%3Cg fill='%23c9a45c'%3E%3Crect x='330' y='70' width='4' height='34'/%3E%3Crect x='342' y='60' width='4' height='44'/%3E%3Crect x='354' y='74' width='4' height='30'/%3E%3C/g%3E%3Crect x='40' y='36' width='120' height='16' rx='8' fill='%230f1b2d'/%3E%3C/svg%3E"
+              alt="视频封面：铅笔画稿局部放大与手腕姿势示意">
+          </div>
+          <div>
+            <div class="mh-video__head">
+              <h3>手部特写：素描时的握笔与运腕</h3>
+              <span class="mh-chip">教程干货</span>
+            </div>
+            <p class="mh-video__meta">作者：柳青禾 · 18 分钟 · 播放 63.2 万 · 点赞 2.8 万 · 收藏 1.4 万</p>
+            <p class="mh-video__desc">逐帧对比「泰坦尼克号画画未删减版」中的手部动作，讲清楚为什么轻微的抖动反而更真实。</p>
+            <div class="mh-video__ops">
+              <button class="mh-op" data-like aria-pressed="false">♥ 点赞 <b>28140</b></button>
+              <button class="mh-op" data-save aria-pressed="false">☆ 收藏</button>
+              <button class="mh-op" data-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="mh-card mh-video">
+          <div>
+            <div class="mh-video__head">
+              <h3>修复前后的画质差在哪里</h3>
+              <span class="mh-chip">深度测评</span>
+            </div>
+            <p class="mh-video__meta">作者：顾砚声 · 26 分钟 · 播放 91.5 万 · 点赞 4.1 万 · 收藏 1.9 万</p>
+            <p class="mh-video__desc">对比多种修复方案，讨论「泰坦尼克号画画未删减版」在暗部层次上的保留与取舍，给出可复用的参数思路。</p>
+          </div>
+          <div class="mh-video__ops">
+            <button class="mh-op" data-like aria-pressed="false">♥ 点赞 <b>41260</b></button>
+            <button class="mh-op" data-save aria-pressed="false">☆ 收藏</button>
+            <button class="mh-op" data-copy>复制链接</button>
+          </div>
+        </article>
+
+        <article class="mh-card mh-video">
+          <div>
+            <div class="mh-video__head">
+              <h3>从纸面到银幕：一场素描的镜头调度</h3>
+              <span class="mh-chip">创作幕后</span>
+            </div>
+            <p class="mh-video__meta">作者：宋未晚 · 33 分钟 · 播放 47.9 万 · 点赞 1.9 万 · 收藏 1.1 万</p>
+            <p class="mh-video__desc">导演组为什么选择长镜头？我们把「泰坦尼克号画画未删减版」的视线路径画成动线图，解释节奏是如何被建立起来的。</p>
+          </div>
+          <div class="mh-video__ops">
+            <button class="mh-op" data-like aria-pressed="false">♥ 点赞 <b>19680</b></button>
+            <button class="mh-op" data-save aria-pressed="false">☆ 收藏</button>
+            <button class="mh-op" data-comment>评论</button>
+          </div>
+        </article>
+
+        <article class="mh-card mh-video">
+          <div>
+            <div class="mh-video__head">
+              <h3>课堂实录：把片段带进美术教室</h3>
+              <span class="mh-chip">知识科普</span>
+            </div>
+            <p class="mh-video__meta">作者：林知屿 · 21 分钟 · 播放 35.6 万 · 点赞 1.5 万 · 收藏 8600</p>
+            <p class="mh-video__desc">一线美术教师如何用「泰坦尼克号画画未删减版」讲解人体结构与透视，附带可直接使用的课堂提问清单。</p>
+          </div>
+          <div class="mh-video__ops">
+            <button class="mh-op" data-like aria-pressed="false">♥ 点赞 <b>15320</b></button>
+            <button class="mh-op" data-save aria-pressed="false">☆ 收藏</button>
+            <button class="mh-op" data-copy>复制链接</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 / M15 专题深度解析（800字以上） -->
+  <section class="mh-sec mh-sec--tight" id="mh-parse" aria-labelledby="mh-parse-title" style="background:var(--mh-paper-2)">
+    <div class="mh-shell">
+      <div class="mh-sec-head">
+        <span class="mh-eyebrow">Deep Analysis</span>
+        <h2 id="mh-parse-title">深度解析：泰坦尼克号画画未删减版为何值得反复观看</h2>
+        <p>作为官方网站的重点考据栏目，我们邀请三位长期从事影视美术与短视频创作的研究者，把这段影像拆成可讨论的细节。</p>
+      </div>
+
+      <div class="mh-prose">
+        <h3>一、被保留的“未删减”到底是什么</h3>
+        <p>许多观众第一次搜索「泰坦尼克号画画未删减版」，期待的是更完整的画面与更长的镜头。但从影像研究的角度看，所谓“未删减”的价值并不在于时长，而在于那些被保留下来、没有被快剪掉的过渡：铅笔在纸面上停留的半秒、手腕的轻微回旋、画师抬眼确认对方神态的那一瞬。这些细节在常规剪辑版里往往会被压缩，而完整段落把它们交还给观众，让观看者能够真正理解一幅素描是被“等”出来的。幕海影像在整理这批素材时，坚持只使用正版授权与可追溯来源的清晰版本，并对每一处时间码做标注，方便创作者逐帧比对。</p>
+        <p>我们注意到，在完整段落里，画师并不是一上来就落笔的。他先观察，再调整坐姿，然后用指腹轻擦纸面确认纹理。这些动作看似琐碎，却是理解人物关系的关键：被画的人紧张，画画的人也在克制。官网的解析视频把这段过程切成七个节点，每个节点配一句提示，帮助观众把注意力从“像不像”转移到“为什么这样画”。这也是我们做内容生态的初衷——不是替观众下结论，而是提供足够扎实的观察材料。</p>
+
+        <div class="mh-inline-figure">
+          <figure>
+            <img
+              src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%23f4ecdb'/%3E%3Cg stroke='%23544633' stroke-width='2.4' fill='none'%3E%3Cpath d='M90 320 C170 250 220 220 300 200'/%3E%3Cpath d='M300 200 C330 190 364 194 384 210'/%3E%3Cpath d='M190 280 C180 246 194 216 226 200'/%3E%3Cpath d='M260 224 C246 196 258 168 290 156'/%3E%3C/g%3E%3Ccircle cx='398' cy='204' r='22' fill='none' stroke='%23544633' stroke-width='2.4'/%3E%3Cg stroke='%23a58f68' stroke-width='1.6'%3E%3Cpath d='M80 360 h200'/%3E%3Cpath d='M80 376 h140'/%3E%3C/g%3E%3Crect x='440' y='70' width='130' height='90' rx='6' fill='%23e2d4b8' stroke='%23bda885'/%3E%3C/svg%3E"
+              alt="解析配图一：泰坦尼克号画画未删减版中的铅笔线条推进示意">
+            <figcaption>线条推进：从轮廓到结构的四个阶段</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%231a2c44'/%3E%3Cg stroke='%23e2c992' stroke-width='2' opacity='.75' fill='none'%3E%3Cpath d='M60 320 L180 320'/%3E%3Cpath d='M60 300 L240 300'/%3E%3C/g%3E%3Crect x='90' y='90' width='200' height='150' rx='8' fill='%23f1e8d6'/%3E%3Cg stroke='%23504030' stroke-width='2.2' fill='none'%3E%3Cpath d='M130 210 C160 170 180 156 214 146'/%3E%3Cpath d='M214 146 C228 140 244 142 252 150'/%3E%3C/g%3E%3Ccircle cx='374' cy='150' r='40' fill='none' stroke='%23c9a45c' stroke-width='2'/%3E%3Cpath d='M352 150 h44 M374 128 v44' stroke='%23c9a45c' stroke-width='1.6'/%3E%3C/svg%3E"
+              alt="解析配图二：暗房光下的镜头时间码对照表">
+            <figcaption>时间码对照：七个节点的观看提示</figcaption>
+          </figure>
+        </div>
+
+        <h3>二、笔触、光影与镜头距离的三重配合</h3>
+        <p>如果只看静态截图，很容易低估这段影像的技术难度。真正让「泰坦尼克号画画未删减版」耐看的，是笔触、光影和镜头距离三者的同步变化。镜头一开始保持较远的中景，把人物关系交代清楚；当画师进入状态，机位缓慢前移，观众几乎能看清铅笔在纸面上留下的浅灰颗粒。此时光源并不理想，属于低照度环境，但摄影组刻意保留了一点侧逆光，让人物轮廓不至于糊成一片。我们的修复团队在处理这批素材时，遵循“先还原、再克制”的原则：提升暗部可读性，但拒绝过度锐化，避免把纸张纹理磨成塑料质感。</p>
+        <p>对短视频创作者而言，这里有一个非常实用的启发：不要急着上滤镜。很多翻拍或模仿作品之所以显得假，是因为把光影拉平了。我们在官网发布的实操版解析里，给出了三步检查法——先确认主光方向，再确认纸面最亮与最暗处的层次，最后确认运动模糊是否自然。三步走完，画面会立刻稳住。这个方法论已经被不少画室老师采用，也为我们的品质口碑积累了真实反馈。</p>
+        <div class="mh-quote">“我反复看这段，不是为了记住某一条线，而是提醒自己：慢下来，手才会听话。”——一位来自杭州的美术教师在投稿中写道。</div>
+
+        <h3>三、从一段影像到一个持续生长的内容生态</h3>
+        <p>幕海影像并不是一家只做单一爆款的内容团队。作为一家持续运营的企业，我们更在意内容能否形成长期可用的资产。「泰坦尼克号画画未删减版」这个专题从最初的一条解析视频，已经扩展为包含修复对比、课堂实录、临摹挑战、创作者访谈在内的多元内容矩阵。我们把这套结构称为“可进入的专题”：观众可以从任意一个入口进来，先看热闹，再逐渐看懂门道，最后愿意自己动手上传作品。社区里已经出现了上百份临摹稿，风格各异，有铅笔的、炭笔的，也有用平板绘制的。评审组按月挑选优秀作品进行官方推荐，并给出具体、可执行的改进建议。</p>
+        <p>我们同样重视版权与正版意识。所有引用素材均标注来源与授权范围，转载申请走统一流程；对二次创作的边界，我们在 FAQ 中写得很清楚。有人觉得这太较真，但正是这种较真，让我们在垂直领域里被更多创作者信任。行业领先从来不是一句口号，而是由一份份标注、一条条时间码、一次次公开讨论累积起来的。接下来，我们计划把专题延伸到影视美术的更多经典片段，用同样的方法论做拆解，让「泰坦尼克号画画未删减版」成为一个起点，而不是终点。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- M4 专题企划 -->
+  <section class="mh-sec" id="mh-topics" aria-labelledby="mh-topics-title">
+    <div class="mh-shell">
+      <div class="mh-sec-head">
+        <span class="mh-eyebrow">Editorial Projects</span>
+        <h2 id="mh-topics-title">专题企划：围绕画画未删减版的长期栏目</h2>
+        <p>三个常设企划持续更新，欢迎创作者报名参与，也欢迎观众投票选出下一期主题。</p>
+      </div>
+      <div class="mh-topics">
+        <article class="mh-card mh-topic">
+          <span class="mh-topic__status">连载中 · 第 6 期</span>
+          <h3>逐帧临摹计划</h3>
+          <p>每月选取「泰坦尼克号画画未删减版」中的一个 8 秒片段，邀请创作者提交临摹作品，官方给出逐条点评。</p>
+          <ul>
+            <li>第 6 期：手部握笔特写（已开放投稿）</li>
+            <li>第 5 期：纸面纹理与明暗过渡</li>
+            <li>第 4 期：眼神与侧脸的构图关系</li>
+          </ul>
+          <button class="mh-btn mh-btn--line mh-btn--sm" data-submit style="margin-top:14px;align-self:flex-start">报名参与</button>
+        </article>
+        <article class="mh-card mh-topic">
+          <span class="mh-topic__status">更新至 4 集</span>
+          <h3>画室夜谈</h3>
+          <p>把镜头交给画室，聊创作中的犹豫、失败与重来。没有标准答案，只有真实经验与彼此陪伴。</p>
+          <ul>
+            <li>第 4 集：画坏了要不要重开一张</li>
+            <li>第 3 集：如何看待“像不像”的评价</li>
+            <li>第 2 集：一支铅笔能用多久</li>
+          </ul>
+          <a class="mh-btn mh-btn--line mh-btn--sm" href="#mh-authors" style="margin-top:14px;align-self:flex-start">查看嘉宾</a>
+        </article>
+        <article class="mh-card mh-topic">
+          <span class="mh-topic__status">官方发布 · 进行中</span>
+          <h3>修复对照实验室</h3>
+          <p>公开比对不同修复参数下的画面差异，所有结论均附可复现步骤，供剪辑师与影像爱好者参考。</p>
+          <ul>
+            <li>暗部提亮与噪点控制的平衡</li>
+            <li>纸面颗粒保留度评分表</li>
+            <li>低照度素材的色彩还原清单</li>
+          </ul>
+          <a class="mh-btn mh-btn--line mh-btn--sm" href="#mh-rank" style="margin-top:14px;align-self:flex-start">查看评分</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- M5 创作者矩阵 -->
+  <section class="mh-sec mh-sec--tight" id="mh-authors" aria-labelledby="mh-authors-title" style="background:var(--mh-paper-2)">
+    <div class="mh-shell">
+      <div class="mh-sec-head">
+        <span class="mh-eyebrow">Creator Matrix</span>
+        <h2 id="mh-authors-title">创作者矩阵：让专业的人讲专业的事</h2>
+        <p>四位长期合作创作者，覆盖美术教学、影像修复、镜头语言与社区运营。点击可查看档案。</p>
+      </div>
+      <div class="mh-authors">
+        <article class="mh-card mh-author">
+          <div class="mh-avatar" style="background:linear-gradient(135deg,#22354f,#0f1b2d)">沈</div>
+          <div>
+            <div class="mh-author__name"><h3>沈昼白</h3><span class="mh-author__tags">美术教学 · 素描解析</span></div>
+            <div class="mh-author__nums">作品 86 · 粉丝 32.4 万</div>
+            <p>美院素描方向出身，教龄九年。擅长把复杂结构拆成可练习的小步骤，主张先理解再动手。长期主持「逐帧临摹计划」，点评风格直接但不刻薄。</p>
+            <button class="mh-op" data-author="沈昼白|美术教学 · 素描解析|作品 86 · 粉丝 32.4 万|美院素描方向出身，教龄九年，长期主持逐帧临摹计划，强调理解在先、练习在后。">查看档案</button>
+          </div>
+        </article>
+        <article class="mh-card mh-author">
+          <div class="mh-avatar" style="background:linear-gradient(135deg,#a8433a,#6f2b24)">顾</div>
+          <div>
+            <div class="mh-author__name"><h3>顾砚声</h3><span class="mh-author__tags">影像修复 · 技术测评</span></div>
+            <div class="mh-author__nums">作品 52 · 粉丝 21.8 万</div>
+            <p>后期修复工程师，参与过多部老片数字化项目。做测评坚持公开参数与原始样本，反对“一眼惊艳”的过度处理，是官网修复对照栏目的主要撰稿人之一。</p>
+            <button class="mh-op" data-author="顾砚声|影像修复 · 技术测评|作品 52 · 粉丝 21.8 万|后期修复工程师，参与老片数字化项目，主张公开参数、保留纹理，是修复对照栏目主撰稿人。">查看档案</button>
+          </div>
+        </article>
+        <article class="mh-card mh-author">
+          <div class="mh-avatar" style="background:linear-gradient(135deg,#6a7f5a,#3c4a33)">宋</div>
+          <div>
+            <div class="mh-author__name"><h3>宋未晚</h3><span class="mh-author__tags">镜头语言 · 创作幕后</span></div>
+            <div class="mh-author__nums">作品 41 · 粉丝 18.6 万</div>
+            <p>独立导演，拍过广告也拍过纪录片。喜欢画动线图研究观众视线，讲解节奏问题时习惯拿具体秒数说话，被社区称为“时间码导演”。</p>
+            <button class="mh-op" data-author="宋未晚|镜头语言 · 创作幕后|作品 41 · 粉丝 18.6 万|独立导演，擅用动线图拆解镜头节奏，常以具体时间码讲解画面调度，社区称其时间码导演。">查看档案</button>
+          </div>
+        </article>
+        <article class="mh-card mh-author">
+          <div class="mh-avatar" style="background:linear-gradient(135deg,#8a6c2f,#c9a45c)">林</div>
+          <div>
+            <div class="mh-author__name"><h3>林知屿</h3><span class="mh-author__tags">课堂实录 · 知识科普</span></div>
+            <div class="mh-author__nums">作品 63 · 粉丝 15.2 万</div>
+            <p>中学美术教师，把课堂搬进视频。她相信影像可以让抽象概念变具体，常用「泰坦尼克号画画未删减版」讲透视与人体结构，配套教案向社区免费开放。</p>
+            <button class="mh-op" data-author="林知屿|课堂实录 · 知识科普|作品 63 · 粉丝 15.2 万|中学美术教师，把课堂搬进视频，用完整影像片段讲解透视与结构，教案免费开放给社区。">查看档案</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- M14 数据榜单 + M8 评价 -->
+  <section class="mh-sec" id="mh-rank" aria-labelledby="mh-rank-title">
+    <div class="mh-shell">
+      <div class="mh-sec-head">
+        <span class="mh-eyebrow">Data & Voice</span>
+        <h2 id="mh-rank-title">口碑榜与观众短评：真实反馈驱动内容迭代</h2>
+        <p>榜单按播放、收藏与口碑综合计算，每周一更新；短评来自社区投稿，保留原始语气与长度。</p>
+      </div>
+
+      <div class="mh-rank">
+        <div class="mh-rank__row">
+          <div class="mh-rank__no">01</div>
+          <div class="mh-rank__title">一帧一帧看：笔触与呼吸<small>沈昼白 · 深度考据</small></div>
+          <div class="mh-rank__bar"><i style="width:96%"></i></div>
+          <div class="mh-rank__val">128.7 万</div>
+        </div>
+        <div class="mh-rank__row">
+          <div class="mh-rank__no">02</div>
+          <div class="mh-rank__title">修复前后的画质差在哪里<small>顾砚声 · 深度测评</small></div>
+          <div class="mh-rank__bar"><i style="width:88%"></i></div>
+          <div class="mh-rank__val">91.5 万</div>
+        </div>
+        <div class="mh-rank__row">
+          <div class="mh-rank__no">03</div>
+          <div class="mh-rank__title">手部特写：握笔与运腕<small>柳青禾 · 教程干货</small></div>
+          <div class="mh-rank__bar"><i style="width:72%"></i></div>
+          <div class="mh-rank__val">63.2 万</div>
+        </div>
+        <div class="mh-rank__row">
+          <div class="mh-rank__no">04</div>
+          <div class="mh-rank__title">从纸面到银幕：镜头调度<small>宋未晚 · 创作幕后</small></div>
+          <div class="mh-rank__bar"><i style="width:61%"></i></div>
+          <div class="mh-rank__val">47.9 万</div>
+        </div>
+        <div class="mh-rank__row">
+          <div class="mh-rank__no">05</div>
+          <div class="mh-rank__title">课堂实录：把片段带进教室<small>林知屿 · 知识科普</small></div>
+          <div class="mh-rank__bar"><i style="width:49%"></i></div>
+          <div class="mh-rank__val">35.6 万</div>
+        </div>
+      </div>
+
+      <div class="mh-reviews" style="margin-top:28px">
+        <article class="mh-card mh-review">
+          <div class="mh-review__top"><span class="mh-review__who">@纸上风</span><span class="mh-review__score">★★★★★</span></div>
+          <p>第一次把这段完整看完，才发现原来停顿也是表演。感谢官方把时间码标出来，我照着暂停临摹，手稳了很多。</p>
+        </article>
+        <article class="mh-card mh-review">
+          <div class="mh-review__top"><span class="mh-review__who">@半支铅笔</span><span class="mh-review__score">★★★★☆</span></div>
+          <p>内容很好，就是希望能再出一期纯无解说的画面版，方便我们自己配旁白练习剪辑。</p>
+        </article>
+        <article class="mh-card mh-review">
+          <div class="mh-review__top"><span class="mh-review__who">@南窗工作室</span><span class="mh-review__score">★★★★★</span></div>
+          <p>我们是做短视频的，照着修复那期的三步检查法调了一遍片子，暗部果然不糊了，客户直接通过。</p>
+        </article>
+        <article class="mh-card mh-review">
+          <div class="mh-review__top"><span class="mh-review__who">@美术组小陈</span><span class="mh-review__score">★★★★☆</span></div>
+          <p>作为老师，我最看重的是它没有把“未删减”当成噱头，而是真的在讲怎么观察。教案已经下载，下周就用在课上。</p>
+        </article>
+        <article class="mh-card mh-review">
+          <div class="mh-review__top"><span class="mh-review__who">@海边的信</span><span class="mh-review__score">★★★★★</span></div>
+          <p>很安静的一段影像，看完心里踏实。评论区也很友好，大家都在聊自己的练习，而不是互相挑刺。</p>
+        </article>
+        <article class="mh-card mh-review">
+          <div class="mh-review__top"><span class="mh-review__who">@剪辑房阿哲</span><span class="mh-review__score">★★★☆☆</span></div>
+          <p>整体不错，但访谈那期收音有点空，建议后期补一点环境声。内容方向我还是很认可的。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：企业动态 + 合作 + FAQ + 投稿 -->
+  <section class="mh-sec" id="mh-updates" aria-labelledby="mh-updates-title" style="background:var(--mh-paper-2)">
+    <div class="mh-shell">
+      <div class="mh-sec-head">
+        <span class="mh-eyebrow">Newsroom & Partners</span>
+        <h2 id="mh-updates-title">官方动态与合作伙伴：持续运营的公开记录</h2>
+        <p>企业动态每月更新，合作信息同步披露。我们相信透明本身就是品牌影响力的一部分。</p>
+      </div>
+
+      <div class="mh-two-col">
+        <div>
+          <h3>企业动态</h3>
+          <div class="mh-news">
+            <div class="mh-news__item">
+              <div class="mh-news__date">2026 年 11 月 18 日</div>
+              <h3>「逐帧临摹计划」第 6 期正式开放报名</h3>
+              <p>本期主题为手部握笔特写，报名后可获取高清参考帧与官方点评时段。</p>
+            </div>
+            <div class="mh-news__item">
+              <div class="mh-news__date">2026 年 11 月 9 日</div>
+              <h3>修复对照实验室发布暗部处理评分表 v2</h3>
+              <p>新增纸面颗粒保留度指标，历史测评数据已同步回填，供创作者下载对照。</p>
+            </div>
+            <div class="mh-news__item">
+              <div class="mh-news__date">2026 年 10 月 27 日</div>
+              <h3>官网创作者档案页升级</h3>
+              <p>支持按擅长领域筛选，新增作品数与粉丝数的公开统计口径说明。</p>
+            </div>
+            <div class="mh-news__item">
+              <div class="mh-news__date">2026 年 10 月 12 日</div>
+              <h3>社区临摹作品突破 120 份</h3>
+              <p>本月精选 9 份作品进入官方推荐位，评审意见已逐一回复至投稿邮箱。</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3>合作品牌与伙伴</h3>
+          <div class="mh-partners">
+            <div class="mh-partner"><span class="dot"></span>青灰画材实验室</div>
+            <div class="mh-partner"><span class="dot"></span>白鲸后期工坊</div>
+            <div class="mh-partner"><span class="dot"></span>南岸影像档案馆</div>
+            <div class="mh-partner"><span class="dot"></span>一页纸美术教育</div>
+            <div class="mh-partner"><span class="dot"></span>潮汐声音工作室</div>
+            <div class="mh-partner"><span class="dot"></span>拾光放映社</div>
+          </div>
+
+          <div style="margin-top:26px">
+            <h3>联系与投稿</h3>
+            <p class="mh-muted" style="font-size:13.8px">投稿通道长期开放：影像作品、观看笔记、临摹稿均可提交。审核周期为 5 个工作日，通过后由编辑对接排版与发布。</p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+              <button class="mh-btn mh-btn--primary mh-btn--sm" data-submit>我要投稿</button>
+              <button class="mh-btn mh-btn--line mh-btn--sm" data-share>分享专题</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mh-faq" style="margin-top:44px">
+        <span class="mh-eyebrow">Help Center</span>
+        <h2 style="margin-top:8px">常见问题</h2>
+        <div class="mh-faq">
+          <details open>
+            <summary>「泰坦尼克号画画未删减版」的素材来源是否正规？</summary>
+            <p>官网所有引用素材均标注来源与授权范围，仅使用正版授权或可公开引用的清晰版本。若发现来源存疑，欢迎通过投稿通道反馈，我们会核查并更新标注。</p>
+          </details>
+          <details>
+            <summary>观看与临摹需要付费吗？</summary>
+            <p>基础观看与图文解析免费开放。部分高清参考帧下载与官方点评时段需报名参与，报名不收取费用，但名额有限，按月轮换。</p>
+          </details>
+          <details>
+            <summary>我可以把解析内容用于课堂教学吗？</summary>
+            <p>可以。非商业教学场景下可整篇引用并注明来源；商业培训或二次剪辑发布请先提交转载申请，我们会给出具体授权范围。</p>
+          </details>
+          <details>
+            <summary>投稿需要准备哪些材料？</summary>
+            <p>作品文件或在线预览链接、80 字以内的创作说明、联系方式即可。视频建议 1080P 以上，临摹稿请附原片段截图以便对照。</p>
+          </details>
+          <details>
+            <summary>榜单的评分是怎么计算的？</summary>
+            <p>由播放完成度、收藏率与社区口碑三项加权，权重公开在榜单页说明中。我们不使用付费推广影响排名。</p>
+          </details>
+          <details>
+            <summary>为什么有些内容没有配图？</summary>
+            <p>为保证阅读效率，四项以上的连续条目优先使用文字列表，只对重点内容配 1-3 幅图片。这样也便于移动端阅读。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- M13 CTA -->
+  <section class="mh-sec mh-sec--tight" id="mh-submit" aria-labelledby="mh-submit-title">
+    <div class="mh-shell">
+      <div class="mh-cta">
+        <div>
+          <h2 id="mh-submit-title">把你的版本，放进这场关于画画未删减版的讨论</h2>
+          <p>无论是一张临摹稿、一段剪辑，还是一篇观看笔记，都欢迎提交。官方审核通过后，将进入社区推荐位与月度口碑榜。</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="mh-btn mh-btn--primary" data-submit>立即投稿</button>
+          <button class="mh-btn mh-btn--ghost" data-share>分享给朋友</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="mh-footer">
+  <div class="mh-shell">
+    <div class="mh-footer__grid">
+      <div>
+        <div class="mh-footer__brand">
+          <span class="mh-brand__mark" style="width:36px;height:36px;border-radius:9px">
+            <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <path d="M12 46 L32 14 L52 46 Z" fill="none" stroke="#c9a45c" stroke-width="3"></path>
+              <path d="M20 46 L20 35 L44 35 L44 46" fill="none" stroke="#e8dcc4" stroke-width="2.4"></path>
+            </svg>
+          </span>
+          <span class="mh-brand__name">幕海影像</span>
+        </div>
+        <p>幕海影像官方网站，专注影视影像考据与创作者内容生态。以原创、正版、高清为底线，持续运营「泰坦尼克号画画未删减版」等深度专题，为画师、剪辑师与影像爱好者提供值得信赖的观看与学习场景。</p>
+        <p>官方网站 · 版权所有 · 持续运营中</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <a href="#mh-focus">焦点内容</a>
+        <a href="#mh-parse">深度解析</a>
+        <a href="#mh-topics">专题企划</a>
+        <a href="#mh-rank">口碑榜单</a>
+      </div>
+      <div>
+        <h4>社区与创作</h4>
+        <a href="#mh-authors">创作者矩阵</a>
+        <a href="#mh-submit">投稿入口</a>
+        <a href="#mh-faq">帮助中心</a>
+        <a href="#mh-updates">企业动态</a>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <a href="#mh-top">品牌首页</a>
+        <a href="#mh-parse">品牌故事</a>
+        <a href="#mh-updates">合作伙伴</a>
+        <a href="#mh-faq">版权说明</a>
+      </div>
+    </div>
+    <div class="mh-footer__bottom">
+      <span>© 2026 幕海影像（MUHAI FILM）官方网站 · 保留所有权利</span>
+      <span>广播电视节目制作经营许可（示例）· 备案号 沪 ICP 备 2026000000 号-1</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mh-toast" id="mh-toast" role="status" aria-live="polite"></div>
+
+<button class="mh-totop" id="mh-totop" aria-label="回到顶部">↑</button>
+
+<div class="mh-modal" id="mh-modal" role="dialog" aria-modal="true" aria-labelledby="mh-modal-title">
+  <div class="mh-modal__box">
+    <div class="mh-modal__head">
+      <h3 id="mh-modal-title">投稿与报名</h3>
+      <button class="mh-modal__close" id="mh-modal-close" aria-label="关闭弹窗">×</button>
+    </div>
+    <p class="mh-muted" style="font-size:13.4px;margin:0">填写以下信息即可提交，编辑会在 5 个工作日内回复。</p>
+    <form id="mh-submit-form">
+      <label for="mh-f-name">称呼</label>
+      <input id="mh-f-name" name="name" required placeholder="怎么称呼你">
+      <label for="mh-f-mail">联系方式</label>
+      <input id="mh-f-mail" name="mail" required placeholder="邮箱或常用社交账号">
+      <label for="mh-f-type">投稿类型</label>
+      <select id="mh-f-type" name="type">
+        <option>临摹作品</option>
+        <option>影像作品</option>
+        <option>观看笔记</option>
+        <option>专题报名</option>
+      </select>
+      <label for="mh-f-note">补充说明</label>
+      <textarea id="mh-f-note" name="note" placeholder="简单描述你的内容方向或想参与的主题"></textarea>
+      <div class="mh-modal__foot">
+        <button type="button" class="mh-btn mh-btn--line mh-btn--sm" id="mh-modal-cancel">取消</button>
+        <button type="submit" class="mh-btn mh-btn--primary mh-btn--sm">提交</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('mh-toast');
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 移动端导航折叠 */
+  var burger = document.getElementById('mh-burger');
+  var nav = document.getElementById('mh-nav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? '收起导航' : '展开导航');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* 搜索前端反馈 */
+  var searchInput = document.getElementById('mh-search-input');
+  var searchBtn = document.getElementById('mh-search-btn');
+  var searchResult = document.getElementById('mh-search-result');
+  var searchIndex = [
+    {k:'泰坦尼克号画画未删减版', t:'深度解析 · 笔触与呼吸'},
+    {k:'修复', t:'修复前后的画质差在哪里'},
+    {k:'素描', t:'手部特写：握笔与运腕'},
+    {k:'镜头', t:'从纸面到银幕：镜头调度'},
+    {k:'课堂', t:'课堂实录：把片段带进教室'},
+    {k:'创作者', t:'创作者矩阵与档案'},
+    {k:'投稿', t:'投稿与报名入口'}
+  ];
+  function doSearch(){
+    var q = searchInput.value.trim();
+    if(!q){
+      searchResult.textContent = '输入“画画”“修复”“镜头”等关键词试试。';
+      return;
+    }
+    var hit = searchIndex.filter(function(it){ return it.k.indexOf(q) > -1 || it.t.indexOf(q) > -1; });
+    if(hit.length){
+      searchResult.textContent = '为你找到 ' + hit.length + ' 条相关：' + hit.map(function(h){return h.t;}).join(' / ');
+    }else{
+      searchResult.textContent = '暂无“' + q + '”的直接结果，可在投稿入口提交你想看的内容方向。';
+    }
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('input', function(){
+    if(searchInput.value.length > 1){ doSearch(); }
+    else{ searchResult.textContent = ''; }
+  });
+
+  /* 点赞 / 收藏 */
+  document.querySelectorAll('[data-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var b = btn.querySelector('b');
+      var n = b ? parseInt(b.textContent,10) : 0;
+      var liked = btn.classList.toggle('is-liked');
+      btn.setAttribute('aria-pressed', liked ? 'true' : 'false');
+      if(b){ b.textContent = liked ? (n+1) : (n-1); }
+      showToast(liked ? '已点赞，感谢支持' : '已取消点赞');
+    });
+  });
+  document.querySelectorAll('[data-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('is-saved');
+      btn.setAttribute('aria-pressed', saved ? 'true' : 'false');
+      btn.textContent = saved ? '★ 已收藏' : '☆ 收藏';
+      showToast(saved ? '已加入收藏列表' : '已取消收藏');
+    });
+  });
+
+  /* 复制链接 */
+  document.querySelectorAll('[data-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var url = window.location.href.split('#')[0] + '#mh-focus';
+      function done(){ showToast('链接已复制，去分享吧'); }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(done).catch(function(){ showToast('复制失败，可手动选择地址栏'); });
+      }else{
+        showToast('当前环境不支持自动复制，可手动选择地址栏');
+      }
+    });
+  });
+
+  /* 分享提示 */
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      showToast('可分享至微信 / 微博 / QQ 等平台，专题链接已就绪');
+    });
+  });
+
+  /* 评论展开 */
+  document.querySelectorAll('[data-comment]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var row = btn.closest('.mh-video') || btn.closest('.mh-focus__body');
+      if(!row) return;
+      var old = row.querySelector('.mh-inline-comment');
+      if(old){ old.remove(); return; }
+      var box = document.createElement('div');
+      box.className = 'mh-inline-comment';
+      box.style.cssText = 'margin-top:12px;padding:12px 14px;border-radius:10px;background:#faf6ee;border:1px solid #e2dac9;font-size:13.4px;color:#4a566b;';
+      box.innerHTML = '<b>社区短评</b>：' +
+        '「看完立刻去拿铅笔，手停不下来了。」 · ' +
+        '「官方标的时间码真的有用。」 · ' +
+        '「希望出一期纯画面版。」';
+      row.appendChild(box);
+      showToast('已展开社区短评');
+    });
+  });
+
+  /* 作者信息弹窗 */
+  var modal = document.getElementById('mh-modal');
+  var modalTitle = document.getElementById('mh-modal-title');
+  var modalBox = modal.querySelector('.mh-modal__box');
+  var submitForm = document.getElementById('mh-submit-form');
+  var formSnapshot = submitForm ? submitForm.innerHTML : '';
+  function openModal(mode, authorData){
+    if(mode === 'author'){
+      modalTitle.textContent = authorData[0] + ' · 创作者档案';
+      modalBox.querySelector('.mh-muted').textContent = authorData[1] + ' ，' + authorData[2];
+      submitForm.innerHTML = '<p style="font-size:14px;color:#37425a">' + authorData[3] + '</p>' +
+        '<p style="font-size:13.6px;color:#5d6a7e">长期合作创作者，参与官方网站多个专题的策划与拍摄。档案信息由创作者本人确认。</p>' +
+        '<div class="mh-modal__foot"><button type="button" class="mh-btn mh-btn--line mh-btn--sm" id="mh-modal-cancel-2">关闭</button></div>';
+      var c2 = document.getElementById('mh-modal-cancel-2');
+      if(c2){ c2.addEventListener('click', closeModal); }
+    }else{
+      modalTitle.textContent = '投稿与报名';
+      submitForm.innerHTML = formSnapshot;
+      bindForm();
+    }
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('author', btn.getAttribute('data-author').split('|'));
+    });
+  });
+  document.querySelectorAll('[data-submit]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal('submit'); });
+  });
+  document.getElementById('mh-modal-close').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal){ closeModal(); } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeModal(); } });
+
+  function bindForm(){
+    var form = document.getElementById('mh-submit-form');
+    var cancel = document.getElementById('mh-modal-cancel');
+    if(cancel){ cancel.addEventListener('click', closeModal); }
+    if(!form) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('mh-f-name');
+      if(!name || !name.value.trim()){ showToast('请填写称呼后再提交'); return; }
+      closeModal();
+      showToast('投稿已提交，编辑将在 5 个工作日内回复');
+    });
+  }
+  bindForm();
+
+  /* FAQ details 原生展开，附加提示 */
+  document.querySelectorAll('.mh-faq details').forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(d.open){ showToast('已展开问题'); }
+    });
+  });
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('mh-totop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 560){ toTop.classList.add('is-show'); }
+    else{ toTop.classList.remove('is-show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll('[data-count]');
+  var started = false;
+  function runCounters(){
+    if(started) return;
+    started = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'),10) || 0;
+      var start = null;
+      var dur = 1100;
+      function step(ts){
+        if(start === null){ start = ts; }
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased).toLocaleString('en-US');
+        if(p < 1){ requestAnimationFrame(step); }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ runCounters(); io.disconnect(); } });
+    }, {threshold:.35});
+    var stats = document.querySelector('.mh-stats');
+    if(stats){ io.observe(stats); }
+  }else{
+    runCounters();
+  }
+})();
+</script>
+</body>
+  </html>
